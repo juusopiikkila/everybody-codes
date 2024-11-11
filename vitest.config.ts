@@ -1,6 +1,7 @@
 export default {
     test: {
         globals: true,
+        root: './',
         coverage: {
             reporter: [
                 'text',
