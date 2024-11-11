@@ -4,7 +4,7 @@ import minimist from 'minimist';
 const argv = minimist(process.argv.slice(2));
 
 const year = (new Date()).getFullYear();
-const { day } = argv;
+const day = argv.day || (new Date()).getDate();
 
 if (!day) {
     throw new Error('No day provided');
