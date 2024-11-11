@@ -21,3 +21,16 @@ export async function readFileToArray(path: string): Promise<string[]> {
     const data = await readFile(path);
     return data.toString().split('\n').slice(0, -1);
 }
+
+export function parseInputString(input: string): string[] {
+    const data = input
+        .split('\n')
+        .map((row) => row.trim())
+        .slice(0, -1);
+
+    if (data[0] === '') {
+        data.shift();
+    }
+
+    return data;
+}
