@@ -1,14 +1,16 @@
-export default {
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
     test: {
         globals: true,
         root: './',
         coverage: {
             reporter: [
-                'text',
                 'json-summary',
-                'json',
+                'text',
             ],
             reportOnFailure: true,
         },
     },
-};
+});
