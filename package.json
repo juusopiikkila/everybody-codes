@@ -8,9 +8,9 @@
         "dev": "ts-node-dev --no-notify --respawn --ignore-watch node_modules index.ts",
         "lint": "eslint . --ext \".ts\"",
         "debug": "ts-node-dev --inspect --respawn --ignore-watch node_modules index.ts",
-        "test": "vitest",
-        "test:watch": "vitest --watch",
-        "test:cov": "vitest --coverage"
+        "test": "VITE_CJS_IGNORE_WARNING=true vitest",
+        "test:watch": "VITE_CJS_IGNORE_WARNING=true vitest --watch",
+        "test:cov": "VITE_CJS_IGNORE_WARNING=true vitest --coverage"
     },
     "devDependencies": {
         "@meiko/eslint-config-typescript": "^2.13.0",
