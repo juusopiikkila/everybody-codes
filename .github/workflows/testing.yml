@@ -21,4 +21,4 @@ jobs:
       - name: Cov Badge And Publish
         uses: nolleh/jest-badge-deploy-action@v1.0.7
         with:
-          folder: coverage
+          folder: badges
