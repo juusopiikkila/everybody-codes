@@ -38,6 +38,6 @@ describe('Part 3', () => {
     it('should return 1', () => {
         const output = program.runPart3([]);
 
-        expect(output).toEqual(1);
+        expect(output).toEqual(2);
     });
 });

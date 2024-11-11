@@ -10,6 +10,6 @@ export default class Program implements ProgramDefinition {
     }
 
     runPart3(input: string[]) {
-        return 1;
+        return 2;
     }
 }
