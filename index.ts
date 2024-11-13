@@ -35,8 +35,9 @@ async function main() {
             console.timeEnd('Execution time');
 
             printAnswer(answer);
-        } catch {
+        } catch (error) {
             console.log('Not implemented');
+            console.log(error);
         }
     }
     /* eslint-enable no-await-in-loop */
